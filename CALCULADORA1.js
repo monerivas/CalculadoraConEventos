@@ -83,3 +83,7 @@ function division(){
     }
     document.getElementById('salida').value = '';
 }
+function mostrarResultado(){
+  var valorCajita = document.getElementById('salida').placeholder;
+  valorCajita=arreglo[0].toString();
+}
