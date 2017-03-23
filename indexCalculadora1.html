@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prueba</title>
+</head>
+<body>
+    <!-- aqui me ponga lo que tenga el boton -->
+            
+
+
+            <div  align="center" class="container">
+              <h1>Calculadora</h1>
+              <input id="salida" type="text" class="form-control" placeholder="0.00" autofocus="">
+              <table border="solid">
+                <tr>
+                  <td><strong><button id="1" value="1" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">1</button></strong></td>
+                  <td><strong><button id="2" value="2" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">2</button></strong></td>
+                  <td><strong><button id="3" value="3"type="button" class="number" onclick="imprimirResultado(this.innerHTML)">3</button></strong></td>
+                  <td><strong><button id="operadorSuma"type="button" class="operador" onclick="suma();">+</button></strong></td>
+                </tr>
+        <!--en el evento onclick cuando llamamos a la funcion mostrarNumerosEnIput es importante pasarle el parametro id-->
+                <tr>
+                  <td><strong><button id="4" value="4" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">4</button></strong></td>
+                  <td><strong><button id="5" value="5" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">5</button></strong></td>
+                  <td><strong><button id="6" value="6" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">6</button></strong></td>
+                  <td><strong><button id="operadorResta" type="button" class="operador" onclick="restar();">-</button></strong></td>
+                </tr>
+
+                <tr>
+                  <td><strong><button id="7" value="7" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">7</button></strong></td>
+                  <td><strong><button id="8" value="8" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">8</button></strong></td>
+                  <td><strong><button id="9" value="9" type="button" class="number" onclick="imprimirResultado(this.innerHTML)">9</button></strong></td>
+                  <td><strong><button id="producto" type="button" class="operador" onclick="producto();">*</button></strong></td>
+                </tr>
+
+                <tr>
+                  <td><strong><button id="operadorPunto"type="button" class="operador" onclick="">.</button></strong></td>
+                  <td><strong><button type="button" class="number" onclick="imprimirResultado(this.innerHTML)">0</button></strong></td>
+                  <td><strong><button id="operadorIgual"type="button" class="operador" onclick="obtenerValorNumericoDelInput();">=</button></strong></td>
+                  <td><strong><button id="operadorDivision" type="button" class="operador" onclick="dividir();">/</button></strong></td>
+                </tr>
+              </table>
+            </div>
+
+    <script src="CALCULADORA1.js"></script>
+</body>
+</html>
